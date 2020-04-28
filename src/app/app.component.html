@@ -1,3 +1,4 @@
 <app-header></app-header>
-<app-bookadd></app-bookadd>
-<app-listbooks></app-listbooks>
+<!-- get data emitted bookEmitter object -->
+<app-bookadd (bookEmitter)='OnAddBooks($event)'></app-bookadd>
+<app-listbooks *ngFor='let eachBook of bookListArray'></app-listbooks>
